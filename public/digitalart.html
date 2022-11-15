@@ -84,7 +84,9 @@
   <main>
     
       <section class="section portfolio"><br>
+
         <p class="h2 section-title">Digital Art</p>
+
         <div class="container portfolio-nav">
           <ul>
               <li><a href="./digitalart.html" class="portfolio-nav-link">Digital Art</a></li>
@@ -93,17 +95,68 @@
               <li><a href="./papel.html" class="portfolio-nav-link">Papel</a></li>
           </ul>
 
-      </div>
+        </div>
+
         <div class="container-portfolio">
-          <div class="image-gallery">
+          
+          <ul class="image-gallery" id="image-gallery">
+            <li>
+              <img class="img-1" src="./assets/images/portfolio/pathyfada.png" alt="Pathyfada">
+            </li>
+            
+            <li>
+              <img class="img-2" src="./assets/images/portfolio/debolie.jpg" alt="Debolie">
+            </li>
+            
+            <li>
+              <img class="img-3" src="./assets/images/portfolio/Zoea.jpg" alt="Zoe">
+            </li>
+            
+            <li>
+              <img class="img-4" src="./assets/images/portfolio/poro of.png" alt="Poro">
+            </li>
+            
+          </ul>
+          
+          <div id="fullpage">
+            
+            <div class="carousel" data-carousel>
 
-            <img class="img-1" src="./assets/images/portfolio/pathyfada.png" alt="Pathyfada">
-            <img class="img-2" src="./assets/images/portfolio/debolie.jpg" alt="Debolie">
-            <img class="img-3" src="./assets/images/portfolio/Zoea.jpg" alt="Zoe">
-            <img class="img-4" src="./assets/images/portfolio/poro of.png" alt="Poro">
-
+              <button class="carousel-btn close" id="closebtn">
+                <ion-icon name="close"></ion-icon>
+              </button>
+              
+              <button class="carousel-btn prev" data-carousel-btn="prev">
+                <ion-icon name="chevron-back"></ion-icon>
+                </button>
+                
+                <button class="carousel-btn next" data-carousel-btn="next">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </button>
+                
+                <ul class="fullpage-list" data-slides>
+                  
+                  <li class="slide" data-active>
+                    <img src="./assets/images/portfolio/pathyfada.png" alt="Pathyfada">
+                  </li>
+                  
+                  <li class="slide">
+                    <img src="./assets/images/portfolio/debolie.jpg" alt="Debolie">
+                  </li>
+                  
+                  <li class="slide">
+                    <img src="./assets/images/portfolio/Zoea.jpg" alt="Zoe">
+                  </li>
+                  
+                  <li class="slide">
+                    <img src="./assets/images/portfolio/poro of.png" alt="Poro">
+                  </li>
+                  
+                </ul>
+                
+            </div>
           </div>
-          <div id="fullpage" onclick="this.style.display='none';"></div>
+          
         </div>
         
       </section>

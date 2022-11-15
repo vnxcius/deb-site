@@ -92,19 +92,59 @@
               <li><a href="./aquarela.html" class="portfolio-nav-link">Aquarela</a></li>
               <li><a href="./papel.html" class="portfolio-nav-link">Papel</a></li>
           </ul>
-
       </div>
-        <div class="container-portfolio">
-          <div class="image-gallery">
 
-            <img class="img-1" src="./assets/images/portfolio/j.jpeg" alt="Yuumi do League of Legends">
-            <img class="img-2" src="./assets/images/portfolio/l.jpeg" alt="Pinheiro preto com fundo em tons de azul e rosa">
-            <img class="img-3" src="./assets/images/portfolio/m.jpeg" alt="Pinheiro preto com fundo em tons de cinza e marrom">
+      <div class="container-portfolio">
 
+        <ul class="image-gallery">
+          <li>
+            <img src="./assets/images/portfolio/l.jpeg" alt="Árvore com fundo azul e rosa">
+
+          </li>
+
+          <li>
+            <img src="./assets/images/portfolio/j.jpeg" alt="Yuumi do League of Legends feito em aquarela">
+          </li>
+
+          <li>
+            <img src="./assets/images/portfolio/m.jpeg" alt="Árvore com fundo marrom acizentado">
+
+          </li>
+        </ul>
+
+        <div id="fullpage">
+          <div class="carousel" data-carousel>
+            
+            <button class="carousel-btn close" id="closebtn">
+              <ion-icon name="close"></ion-icon>
+            </button>
+            
+            <button class="carousel-btn prev" data-carousel-btn="prev">
+              <ion-icon name="chevron-back"></ion-icon>
+            </button>
+            
+            <button class="carousel-btn next" data-carousel-btn="next">
+              <ion-icon name="chevron-forward"></ion-icon>
+            </button>
+            
+            <ul class="fullpage-list" data-slides>
+              <li class="slide" data-active>
+                <img src="./assets/images/portfolio/l.jpeg" alt="Árvore com fundo azul e rosa">
+
+              </li>
+
+              <li class="slide">
+                <img src="./assets/images/portfolio/j.jpeg" alt="Yuumi do League of Legends feito em aquarela">
+              </li>
+
+              <li class="slide">
+                <img src="./assets/images/portfolio/m.jpeg" alt="Árvore com fundo marrom acizentado">
+
+              </li>
+            </ul>
           </div>
-          <div id="fullpage" onclick="this.style.display='none';"></div>
         </div>
-        
+      </div>
       </section>
   </main>
 

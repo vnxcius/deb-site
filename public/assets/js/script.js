@@ -28,24 +28,55 @@ for (let i = 0; i < navbarLinks.length; i++) {
   });
 }
 
-/**
- * open fullscreen image
- */
-
 
 function getPics() {
+  
   let imgs = document.querySelectorAll('.image-gallery img');
   let fullPage = document.querySelector('#fullpage');
-
+  let body = document.getElementById('top');
+  
+  // OPEN FULLSCREEN IMAGE FUNCTION
   imgs.forEach(img => {
     img.addEventListener('click', function () {
-      scroll(-100,-100)
-      fullPage.style.backgroundImage = 'url(' + img.src + ')';
+      body.style.overflow = 'hidden';
       fullPage.style.display = 'block';
+      scroll(0,0);
+
+    }); 
+  });
+
+  // X BUTTON TO CLOSE FULLSCREEN IMAGE
+  let closeBtn = document.getElementById('closebtn');
+  closeBtn.addEventListener("click", function (){
+    fullPage.style.display = 'none';
+    body.style.overflow = 'visible';
+  });
+
+  // IMAGE CAROUSEL LIST
+  const buttons = document.querySelectorAll("[data-carousel-btn]")
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const offset = button.dataset.carouselBtn === "next" ? 1 : -1;
+      const slides = button
+      .closest("[data-carousel]")
+      .querySelector("[data-slides]")
+      ;
+
+      const activeSlide = slides.querySelector("[data-active]");
+      let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+
+      if(newIndex < 0) newIndex = slides.children.length - 1;
+      if(newIndex >= slides.children.length) newIndex = 0;
+
+      slides.children[newIndex].dataset.active = true;
+      delete activeSlide.dataset.active;
     });
   });
-}
+
+};
  
+
 
 
 
