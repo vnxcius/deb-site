@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&family=Rubik:wght@300;400;500;700&family=Varela+Round&display=swap"
     rel="stylesheet">
 </head>
 
@@ -385,107 +385,123 @@
 
           </ul>
 
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CONTACT
-      -->
-
-      <section class="section contact" id="contact">
-        <div class="container">
-
-          <div class="contact-card">
-
-            <p class="card-subtitle">Não fique com vergonha</p>
-
-            <h2 class="h2 section-title">Me mande uma mensagem!</h2>
-
-            <div class="wrapper">
-
-              <form action="mailto:deboraolis09@gmail.com" method="post" enctype="text/plain" class="contact-form">
-
-                <input type="text" name="name" placeholder="Nome" required class="contact-input">
-
-                <input type="email" name="email" placeholder="Email" required class="contact-input">
-
-                <textarea name="message" placeholder="Mensagem" required class="contact-input"></textarea>
-
-                <button type="submit" class="btn-submit">Enviar mensagem</button>
-
-              </form>
-
-              <ul class="contact-list">
-
-                <li class="contact-item">
-
-                </li>
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="mail"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Email</h3>
-
-                    <a href="mailto:deboraolis09@gmail.com" class="contact-item-link">deboraolis09@gmail.com</a>
-                  </div>
-
-                </li>
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="call"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Telefone</h3>
-
-                    <a href="tel:+556195881685" class="contact-item-link">+55 61 99588-1685</a>
-                    <a href="tel:+556195881685" class="contact-item-link">+55 61 99384-1558</a>
-                  </div>
-
-                </li>
-
-              </ul>
-
-            </div>
-
-          </div>
+          <!-- * LISTA DE HABILIDADES E LINKS PARA CERTIFICADOS
+          *<ul>
+          *  <li>Certificado de Cores - Caricanecas</li>
+          *  <li>Currículo</li>
+          *  
+          *</ul> -->
 
         </div>
       </section>
-
-
+      
     </article>
   </main>
 
   <!-- 
-    - #FOOTER
+    - #FOOTER & CONTACT CARD
   -->
 
   <footer class="footer">
-    <div class="container">
 
-      <p class="copyright">
-        &copy; 2022 <a href="#" class="copyright-link">Debora Oliveira</a>. Todos Direitos Reservados.
-      </p>
 
-       <ul class="footer-list">
-        <li>
-          <em>Developed by
-            <a href="http://www.vinisimon.dev/" class="copyright-link" target="_blank">Vinícius Simon</a></em>
-        </li>
-      </ul> 
+    <!-- CONTACT CARD -->
+    <div class="container contact-area">
+
+      <div class="contact-card">
+
+        <h1 class="contact-title">Entre em Contato</h1>
+
+        <form class="contact-form" action="mailto:deboraolis09@gmail.com">
+
+          <input type="email" name="email" id="" class="contact-input" placeholder="seuEmail@exemplo.com" required>
+          <button type="submit" class="btn-submit">Enviar</button>
+
+        </form>
+
+      </div>
+
+      
+    </div>
+   
+    <div class="footer-columns container">
+
+      <div>
+        <h1 class="logo-footer void">Olie Deb Art</h1>
+      </div>
+
+      <div>
+        <span class="void"></span>
+      </div>
+
+      <div>
+        <span class="void"></span>
+      </div>
+
+      <div>
+        <h2 class="footer-title service">Serviços</h2>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="#about" class="footer-icon-title footer-link">Sobre</a>
+          </li>
+          <li class="footer-item">
+            <a href="#portfolio" class="footer-icon-title footer-link">Portfólio</a>
+          </li>
+          <li class="footer-item">
+            <a href="#skills" class="footer-icon-title footer-link">Habilidades</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-title contact">Contato</h2>
+          <ul class="footer-list">
+            
+            <li class="footer-item">
+              <div class="footer-icon">
+                <ion-icon name="mail-outline">
+              </div>
+              <div class="footer-icon-title">
+                <a href="mailto:deboraolis09@gmail.com" class="footer-link">deboraolis09@gmail.com</a>
+                
+              </div>
+            </li>
+              
+            <li class="footer-item">
+              <div class="footer-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <div class="footer-icon-title">
+                <p>61 99588-1685</p>
+                
+              </div>
+            </li>
+
+            <li class="footer-item">
+              <div class="footer-icon">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </div>
+              <div class="footer-icon-title">
+                <p>61 99384-1558</p>
+                
+              </div>
+            </li>
+          </ul>
+      </div>
 
     </div>
+
+    <div class="container">
+      <hr class="hr">
+    </div>
+
+    <p class="copyright">
+      &copy; 2022 <a href="#" class="copyright-link">Debora Oliveira</a>. Todos Direitos Reservados.
+    </p>
+
+    <p class="developed">
+      Developed by <a href="https://vinisimon.dev" class="copyright-link">Vinícius Simon</a>
+    </p>
   </footer>
 
 
