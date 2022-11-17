@@ -150,57 +150,56 @@
         <!-- <img src="./assets/blob.svg" alt=""
           style="position: absolute; width: 45%; left: 39%; margin-top: 80px"> -->
           
-          <section class="about" id="about">
-            <div class="container">
-              <figure class="about-banner">
-                
-                <img src="./assets/images/deb.jpeg" loading="lazy" alt="Deb foto" class="img-cover">
-                
-                <div class="abs-icon abs-icon-1">
-                  <img src="./assets/images/photoshop.png" width="20%" alt="Adobe Photoshop">
-                </div>
-                
-                <div class="abs-icon abs-icon-2">
-                  <img src="./assets/images/sketch.png" width="19%" alt="Adobe Photoshop">
-                </div>
-                
-                <div class="abs-icon abs-icon-3">
-                  <img src="./assets/images/krita.png" width="170%" alt="Adobe Photoshop">
-                </div>
-                
-              </figure>
+        <section class="about reveal" id="about">
+          <div class="container">
+            <figure class="about-banner">
               
-              <div class="about-content">
-                
-                <p class="section-subtitle">Design Gráfico</p>
-                
-                <h2 class="h2 section-title">Seguindo minha paixão</h2>
-                
-                <p class="section-text">
-                  Desde sempre amei arte, criar coisas e desenhar. Comecei minha carreira na TI, mas decidi que eu devia
-                  mesmo seguir a carreira de design.
-                </p>
-                
-                <p class="section-text">
-                  Agora estou em busca de oportunidades na área, fazendo o que amo.
-                </p>
-                
-                <a href="#portfolio" class="btn btn-primary blue">Ver Portfólio</a>
-                
+              <img src="./assets/images/deb.jpeg" loading="lazy" alt="Deb foto" class="img-cover">
+              
+              <div class="abs-icon abs-icon-1">
+                <img src="./assets/images/photoshop.png" width="20%" alt="Adobe Photoshop">
               </div>
               
+              <div class="abs-icon abs-icon-2">
+                <img src="./assets/images/sketch.png" width="19%" alt="Adobe Photoshop">
+              </div>
+              
+              <div class="abs-icon abs-icon-3">
+                <img src="./assets/images/krita.png" width="170%" alt="Adobe Photoshop">
+              </div>
+              
+            </figure>
+            
+            <div class="about-content">
+              
+              <p class="section-subtitle">Design Gráfico</p>
+              
+              <h2 class="h2 section-title">Seguindo minha paixão</h2>
+              
+              <p class="section-text">
+                Desde sempre amei arte, criar coisas e desenhar. Comecei minha carreira na TI, mas decidi que eu devia
+                mesmo seguir a carreira de design.
+              </p>
+              
+              <p class="section-text">
+                Agora estou em busca de oportunidades na área, fazendo o que amo.
+              </p>
+              
+              <a href="#portfolio" class="btn btn-primary blue">Ver Portfólio</a>
+              
             </div>
+          </div>
+          <span id="portfolio"></span>
         </section>
         
         
-        
-        
+
+
         
         <!-- 
           - #PORTFOLIO
         -->
-        
-        <section class="section portfolio" id="portfolio">
+        <section class="section portfolio reveal">
           <div class="container">
 
             <p class="section-subtitle">Portfólio</p>
@@ -280,9 +279,10 @@
 
                       <ion-icon name="arrow-forward"></ion-icon>
                     </span>
-
+                    
                   </div>
                 </a>
+                <span id="skills"></span>
               </li>
 
             </ul>
@@ -298,7 +298,7 @@
           - #SKILLS
         -->
 
-        <section class="section skills" id="skills">
+        <section class="section skills">
           <div class="container">
 
             <p class="section-subtitle">Habilidades</p>
@@ -549,14 +549,9 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/butter.js"></script>
-
-  <!-- <script src="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
   <script>
-      (function () {
-          var scroll = new LocomotiveScroll();
-      })();
-  </script> -->
+
+  </script>
 
   <!-- 
     - ionicon link

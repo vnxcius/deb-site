@@ -28,6 +28,23 @@ for (let i = 0; i < navbarLinks.length; i++) {
   });
 }
 
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+  var reveals = document.querySelectorAll('.reveal');
+
+  for(var i = 0; i < reveals.length; i++){
+
+    const windowHeight = window.innerHeight;
+    const revealtop = reveals[i].getBoundingClientRect().top;
+    const revealpoint = 150;
+
+    if(revealtop < windowHeight - revealpoint){
+      reveals[i].classList.add('active');
+    }
+  }
+}
+
 
 function getPics() {
   
@@ -40,8 +57,6 @@ function getPics() {
     img.addEventListener('click', function () {
       body.style.overflow = 'hidden';
       fullPage.style.display = 'block';
-      scroll(0,0);
-
     }); 
   });
 
@@ -69,6 +84,7 @@ function getPics() {
       if(newIndex < 0) newIndex = slides.children.length - 1;
       if(newIndex >= slides.children.length) newIndex = 0;
 
+      //DELETES PREVIOUS IMAGE AND SET NEXT ACTIVE
       slides.children[newIndex].dataset.active = true;
       delete activeSlide.dataset.active;
     });
