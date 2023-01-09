@@ -769,25 +769,11 @@ body {
   #FOOTER
 \*-----------------------------------*/
 
-.custom-shape-divider-bottom-1668568649 {
-  position: absolute;
-  bottom: -3490px;
-  left: 0;
+
+.footer-divider{
+  rotate: 180deg;
+  margin-bottom: -1px;
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1668568649 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 102px;
-}
-
-.custom-shape-divider-bottom-1668568649 .shape-fill {
-  fill: #0B132B;
 }
 
 .contact-area{
