@@ -163,9 +163,23 @@
 
         <h1 class="contact-title">Entre em Contato</h1>
 
-        <form class="contact-form" action="mailto:deboraolis09@gmail.com">
 
-          <input type="email" name="email" id="" class="contact-input" placeholder="seuEmail@exemplo.com" required>
+        <form class="contact-form" action="https://formsubmit.co/deboraolis09@gmail.com" method="post">
+
+          <label for="name" class="label-contact">Nome</label>
+          <input type="text" name="name" id="name" class="contact-input" placeholder="Nome e Sobrenome" required>
+          <label for="Email" class="label-contact">Email</label>
+          <input type="email" name="email" id="email" class="contact-input" placeholder="seuEmail@exemplo.com" required>
+          
+          
+          <label for="message" class="label-contact">Mensagem</label>
+          <textarea name="message" id="message" cols="30" rows="10" maxlength="1000" placeholder="Digite sua mensagem..." required></textarea>
+
+          <input type="hidden" name="_subject" value="Novo contato pelo site!">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="box">
+
+
           <button type="submit" class="btn-submit">Enviar</button>
 
         </form>
@@ -213,7 +227,7 @@
                 <ion-icon name="mail-outline">
               </div>
               <div class="footer-icon-title">
-                <a href="mailto:deboraolis09@gmail.com" class="footer-link">deboraolis09@gmail.com</a>
+                <a href="#contact">deboraolis09@gmail.com</a>
                 
               </div>
             </li>
