@@ -178,6 +178,10 @@ body {
   overflow: auto;
 }
 
+main{
+  margin-bottom: 4em;
+}
+
 :focus-visible { outline-offset: 4px; }
 
 ::-webkit-scrollbar { width: 15px; }
@@ -462,9 +466,7 @@ body {
   #PORTFOLIO
 \*-----------------------------------*/
 
-.portfolio .section-title { margin-block-end: 18px; }
-
-.portfolio .section-text { margin-block-end: 80px; }
+.section-title {margin-top: 2em;}
 
 .portfolio-list {
   display: grid;
@@ -513,9 +515,9 @@ body {
 .container-portfolio{
   width: 100%;
   max-width: 80%;
-  margin: auto;
   padding: 0 1.5rem;
   margin-bottom: 5px;
+  margin: auto;
   animation: 0.3s ease-out imageLoad;
 }
 
