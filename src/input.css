@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fira+Sans:wght@300;500&family=Fredoka:wght@500&family=Open+Sans:wght@500;700;800&family=Quicksand:wght@400;700&display=swap');
+
+
+@font-face {
+  font-family: 'Voga Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url(./assets/fonts/Voga-Medium.woff) format('woff');
+}
+
