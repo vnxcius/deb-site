@@ -2,12 +2,13 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /*-----------------------------------*\
-  #CUSTOM PROPERTY
+  #CUSTOM PROPERTYnpm install -D tailwindcss postcss autoprefixer
+
 \*-----------------------------------*/
 
 :root {
@@ -15,7 +16,7 @@
 
   /* NEW PALLETE */
   
-  --bg-body: #001C4C;
+  --bg-body: #5B9981;
   --bg-primary: #0B132B;
   --bg-secondary: #0d294c;
   --bg-tertiary: #13293d;
@@ -39,7 +40,6 @@
   --ff-tt-commons: 'TT Commons', sans-serif;
   --ff-poppins: 'Poppins', sans-serif;
 
-  --width-main: 1150px;
 
 
 }
@@ -93,8 +93,6 @@ textarea {
 
 button { cursor: pointer; }
 
-input,
-textarea { width: 100%; }
 
 address { font-style: normal; }
 
@@ -102,7 +100,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+main {
   background-color: var(--bg-body);
   color: var(--white);
   font-size: 1.6rem;
@@ -138,149 +136,13 @@ body {
 \*-----------------------------------*/
 
 
-.hero{
-  background: linear-gradient(180deg, #001C4C, #9980f3, #001C4C);
-  height: 100vh;
-  display: flex;
-  justify-self: center;
-}
-
-.hero .container{
-  width: var(--width-main);
-  margin: auto;
-  display: inherit;
-  gap: 1em;
-}
-
-.hero .info{
-  display: inherit;
-  flex-direction: column;
-  font-family: var(--ff-poppins);
-  font-weight: 500;
-  /* gap: 4em; */
-}
-
-.hero .title{
-  font-family: var(--ff-poppins);
-  font-weight: 400;
-  font-size: 35px;
-}
-
-.hero .subtitle{
-  font-size: 22px;
-}
-
-.hero .content{
-  font-size: 90px;
-  font-weight: 500;
-  line-height: 1em;
-  padding-top: 1em;
-  padding-bottom: 1.8em;
-}
-
-.hero .social{
-  display: inherit;
-  align-items: center;
-  gap: .5em;
-  font-size: 30px;
-} .hero .social ion-icon{
-  font-size: 39px;
-  padding-top: 8px;
-}
-
-.hero img{
-  width: 55%;
-  object-fit: contain;
-
-}
-
 
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
 
 
-.about{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  height: 100vh;
-  width: 1300px;
-  margin: auto;
-  gap: 2em;
-}
 
-.bg-title{
-  top: 10%;
-  z-index: -1;
-  width: 50%;
-}
-
-.about .title-container{
-  background: url(../img/pink_brush.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 1em;
-  font-family: var(--ff-poppins);
-}
-
-.about .title{
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 24px;
-  padding-left: 1em;
-}
-
-.about .subtitle{
-  font-weight: 500;
-  font-size: 34px;
-  padding: 0 2em;
-}
-
-.about .container{
-  display: grid;
-  grid-template-columns: 1fr 1.1fr 1fr;
-  gap: 1em;
-  padding: 1em 2em;
-}
-
-.about .left,
-.about .right{
-  font-family: var(--ff-poppins);
-  font-size: 23px;
-  font-weight: 500;
-  line-height: 1.2em;
-
-  position: relative;
-}
-
-.about .right{
-  line-height: 1.4em;
-}
-
-.about .container .left img{
-  top: -20%;
-  left: -30%;
-  width: 145%;
-}
-
-.about .container .right img{
-  top: -26%;
-  left: -30%;
-  width: 160%;
-}
-
-.about .container .right img,
-.about .left img{
-  position: absolute;
-  z-index: -1;
-}
-
-.about .container img{
-  width: 100%;
-  object-fit: contain;
-}
 
 
 /*-----------------------------------*\
