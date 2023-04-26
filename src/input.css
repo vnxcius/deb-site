@@ -13,3 +13,18 @@
   src: url(./assets/fonts/Voga-Medium.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Gagalin';
+  font-style: normal;
+  font-weight: normal;
+  src: url(./assets/fonts/Gagalin-Regular.woff) format('woff');
+}
+
+
+#nav.active{
+  position: sticky;
+  top: 0;
+  transition: all .5s ease;
+  background-color: #5B9981;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

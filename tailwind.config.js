@@ -15,6 +15,7 @@ export const theme = {
       'caveat': "'Caveat', sans-serif",
       'opensans': "'Open Sans', sans-serif",
       'fredoka': "'Fredoka', sans-serif",
+      'gagalin': "'Gagalin', sans-serif",
     }
   },
 
