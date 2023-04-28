@@ -2,8 +2,10 @@
   "devDependencies": {
     "tailwindcss": "^3.3.1"
   },
-
   "scripts": {
     "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "firebase": "^9.21.0"
   }
 }

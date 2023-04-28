@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 
-export const content = ["./src/**/*.{html,js}"]
+export const content = ["./dist/**/*.{html,js}"]
 export const theme = {
+  
   extend: {
     colors: {
       'primary': '#5B9981',
