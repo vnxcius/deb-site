@@ -7,6 +7,8 @@ export const theme = {
     colors: {
       'primary': '#5B9981',
       'secondary': '#e6e6e6',
+      'tertiary': '#D9C0C0',
+      'border': '#4f806d',
     },
 
     fontFamily: {

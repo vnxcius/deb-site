@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fira+Sans:wght@300;500&family=Fredoka:wght@500&family=Open+Sans:wght@500;700;800&family=Quicksand:wght@400;700&display=swap');
-
-
 @font-face {
   font-family: 'Voga Medium';
   font-style: normal;
@@ -34,6 +31,7 @@
   width: 0;
   height: 0;
 }
+
 .clipped {
   width: 350px;
   height: 350px;
@@ -42,4 +40,6 @@
   -webkit-clip-path: url(#my-clip-path);
   clip-path: url(#my-clip-path);
 }
+
+
 

@@ -24,28 +24,42 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fira+Sans:wght@300;500&family=Fredoka:wght@500;600&family=Open+Sans:ital,wght@0,400;0,500;0,800;1,700&family=Quicksand:wght@400;500;700&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/tt-commons" rel="stylesheet">
 
 </head>
 
 <body id="top" class="bg-primary overflow-x-hidden scroll-smooth">
-  <ul id="nav"
-    class="
-    z-20 flex justify-center gap-16 text-white text-3xl font-bold w-full mx-auto p-4 transition-all duration-100
+  <div id="nav" class=" z-50 flex items-center w-full justify-center transition-all duration-100">
+
+    <a href="#" class="text-4xl font-caveat font-bold text-white border-r pr-10 border-neutral-200">Olie Deb Art</a>
+
+    <ul class="
+    flex gap-8 text-white p-4 items-center pl-10 font-firasans
     max-sm:hidden
     ">
-    <li><a href="#inicio">Início</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#portfolio">Portfólio</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
+
+      <li>
+        <a href="#sobre" class="text-xl  hover:text-emerald-200">Sobre</a>
+      </li>
+
+      <li>
+        <a href="#portfolio" class="text-xl hover:text-emerald-200">Portfólio</a>
+      </li>
+
+      <li>
+        <a href="#contato" class="text-xl hover:text-emerald-200">Contato</a>
+      </li>
+    </ul>
+  </div>
 
   <ion-icon name="menu" class="
   md:hidden
   max-sm:block max-sm:fixed max-sm:right-0
   "></ion-icon>
-  <ul id="navmobile"
-    class="md:hidden">
+  <ul id="navmobile" class="md:hidden">
     <li><a href="#inicio">Início</a></li>
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#portfolio">Portfólio</a></li>
@@ -57,8 +71,7 @@
     <section id="inicio" class="bg-primary min-h-[90vh] text-white flex flex-col">
 
       <div class="rotate-[230deg] absolute top-10 right-0 translate-x-64 overflow-hidden w-1/4 max-2xl:translate-x-48">
-        <img src="./assets/img/blob1.png" class="object-contain max-sm:hidden"
-          draggable="false">
+        <img src="./assets/img/blob1.png" class="object-contain max-sm:hidden" draggable="false">
 
       </div>
 
@@ -67,25 +80,25 @@
       w-[1450px] m-auto flex justify-between items-center
       max-2xl:w-[1000px]
       max-sm:w-[300px] max-sm:flex max-sm:flex-col max-sm:gap-10
-      " >
+      ">
         <div class="flex flex-col gap-20 max-2xl:gap-10">
 
           <div class="flex flex-col gap-3 font-firasans">
-            <p class="uppercase font-bold text-4xl tracking-wider max-2xl:text-2xl max-sm:text-xs">Debora de Oliveira</p>
+            <p class="uppercase font-bold text-4xl tracking-wider max-2xl:text-2xl max-sm:text-xs">Debora de Oliveira
+            </p>
             <p class="font-light text-2xl max-2xl:text-xl">Designer Gráfica</p>
           </div>
 
-          <p class="font-voga text-9xl text-white uppercase max-2xl:text-8xl max-sm:text-6xl">Portfólio <br> de Design</p>
+          <p class="font-voga text-9xl text-white uppercase max-2xl:text-8xl max-sm:text-6xl">Portfólio <br> de Design
+          </p>
 
-          <a href="https://www.instagram.com/oliee.art/"
-            class="
+          <a href="https://www.instagram.com/oliee.art/" target="_blank" class="
             flex items-center gap-2 text-3xl w-fit
             hover:text-emerald-200
             max-sm:text-xl max-sm:gap-1
             ">
 
-            <ion-icon name="logo-instagram" 
-            class="
+            <ion-icon name="logo-instagram" class="
             text-4xl
             hover:text-emerald-200 translate-y-[2px]
             max-sm:text-2xl
@@ -96,12 +109,10 @@
 
         </div>
 
-        <img src="./assets/img/beautiful.png" alt="Debora de Oliveira"
-        class="
+        <img src="./assets/img/beautiful.png" alt="Debora de Oliveira" class="
         w-1/2 
         max-2xl:w-7/12
-        max-sm:w-full"
-        draggable="false">
+        max-sm:w-full" draggable="false">
 
       </div>
 
@@ -173,13 +184,16 @@
 
     </section>
 
-    <section class="bg-secondary min-h-screen">
+    <section id="webDesign" class="bg-secondary min-h-screen pt-16">
 
-      <div class="w-[1650px] mx-auto flex">
-        <div class="relative flex flex-col gap-20">
+      <div class="w-[1650px] mx-auto flex p-12 items-center max-2xl:w-[1250px]">
+
+        <div class="relative flex flex-col gap-48">
+
           <img src="./assets/img/blob5.webp" class="w-1/2">
-          <div class="absolute top-0 px-7 py-8">
-            <p class="font-quicksand font-bold text-4xl">Web Design & UX/UI</p>
+
+          <div class="flex flex-col gap-10 absolute top-0 px-7 py-8 max-2xl:py-5 max-2xl:px-6">
+            <p class="font-quicksand font-bold text-4xl max-2xl:text-[28px]">Web Design & UX/UI</p>
             <p class="font-quicksand text-lg">
               Design de sites profissionais e pessoais <br>
               para clientes que buscam mostrar seu <br>
@@ -196,13 +210,95 @@
               </path>
             </clipPath>
           </svg>
-          <div class="clipped"></div>
+
+          <div class="relative">
+            <img src="./assets/img/website_build.gif" class="z-20 absolute w-6/12">
+            <div class="clipped"></div>
+
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="absolute right-0">
+            <img src="./assets/img/phone.png" class="w-[150px] -translate-y-20 ">
+          </div>
+          <img src="./assets/img/laptop.png" class="w-[670px]">
         </div>
 
 
       </div>
+
     </section>
 
+    <section id="designGrafico" class="bg-primary min-h-screen p-16">
+
+      <div class="w-[1650px] mx-auto p-5 max-2xl:w-[1250px]">
+        <div class="relative flex justify-between">
+
+          <img src="./assets/img/flor.png" class="absolute w-52 bottom-0 rotate-45 -translate-x-32">
+
+          <div class="flex flex-col gap-7 text-white">
+            <p class="font-fredoka text-3xl font-semibold">Design Gráfico</p>
+            <p class="font-quicksand text-lg font-medium">
+              Design gráfico para posts nas <br> redes sociais, música e entretenimento
+            </p>
+
+            <div class="z-10 grid grid-cols-3 gap-5">
+              <img src="./assets/img/portfolio/pathyfada.png" alt="Diana"
+              class="w-96 h-72 object-cover rounded shadow-lg max-2xl:w-64">
+
+              <img src="./assets/img/portfolio/Zoea.jpg" alt="Zoe"
+              class="w-96 h-72 object-cover rounded shadow-lg max-2xl:w-64">
+
+              <img src="./assets/img/portfolio/quarta_feira.png" alt="Wandinha"
+              class="w-96 h-72 object-cover rounded shadow-lg max-2xl:w-64">
+
+              <img src="./assets/img/portfolio/lululudidi.png" alt="Lulu e Diana"
+              class="w-96 h-72 object-cover rounded shadow-lg max-2xl:w-64">
+
+              <img src="./assets/img/portfolio/debolie.jpg" alt="Deb Icon"
+              class="w-96 h-72 object-cover rounded shadow-lg max-2xl:w-64">
+
+              <img src="./assets/img/portfolio/poro of.png" alt="Poro"
+              class="w-96 h-72 object-cover rounded shadow-lg max-2xl:w-64">
+            </div>
+
+          </div>
+
+          <div class="relative pt-20">
+
+            <img src="./assets/img/laptop.gif" class="z-20 w-8/12 absolute top-32 left-12">
+            <img src="./assets/img/rocket.webp" class="z-10 w-4/12 absolute top-10 right-16">
+            <img src="./assets/img/heart.webp" class="z-30 w-2/12 absolute top-32 left-24">
+            <img src="./assets/img/button.gif" class="z-10 w-2/12 absolute top-32 right-12">
+            <img src="./assets/img/wip.webp" class="z-30 w-2/12 absolute top-64 left-16">
+
+            <div class="clipped" style="background: #437D67;"></div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <section id="ilustracoes" class="relative bg-secondary min-h-screen">
+
+      <img src="./assets/img/blob7.png" class="w-full">
+
+      <div class="absolute top-72 left-56 w-[1650px] mx-auto pt-16">
+        <div class="flex flex-col gap-2">
+          <p class="font-fredoka font-bold text-4xl">Ilustrações</p>
+          <p class="font-quicksand font-medium text-lg">Ilustrações digitais, <br> desenhos, telas, etc</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contato" class="bg-primary min-h-screen">
+
+    </section>
 
   </main>
 
