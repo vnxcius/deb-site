@@ -516,6 +516,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .absolute {
   position: absolute;
 }
@@ -528,6 +532,10 @@ video {
   bottom: 0px;
 }
 
+.left-10 {
+  left: 2.5rem;
+}
+
 .left-12 {
   left: 3rem;
 }
@@ -538,10 +546,6 @@ video {
 
 .left-24 {
   left: 6rem;
-}
-
-.left-56 {
-  left: 14rem;
 }
 
 .right-0 {
@@ -570,10 +574,6 @@ video {
 
 .top-64 {
   top: 16rem;
-}
-
-.top-72 {
-  top: 18rem;
 }
 
 .z-0 {
@@ -615,6 +615,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-72 {
@@ -663,6 +667,10 @@ video {
 
 .w-8\/12 {
   width: 66.666667%;
+}
+
+.w-9\/12 {
+  width: 75%;
 }
 
 .w-96 {
@@ -738,6 +746,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -782,6 +794,10 @@ video {
   gap: 0.75rem;
 }
 
+.gap-44 {
+  gap: 11rem;
+}
+
 .gap-48 {
   gap: 12rem;
 }
@@ -792,10 +808,6 @@ video {
 
 .gap-7 {
   gap: 1.75rem;
-}
-
-.gap-8 {
-  gap: 2rem;
 }
 
 .overflow-hidden {
@@ -869,6 +881,11 @@ video {
   padding-right: 6rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -884,26 +901,24 @@ video {
   padding-bottom: 2rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .pb-3 {
   padding-bottom: 0.75rem;
 }
 
-.pl-10 {
-  padding-left: 2.5rem;
+.pl-20 {
+  padding-left: 5rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
 .pr-10 {
   padding-right: 2.5rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .pt-16 {
@@ -914,20 +929,12 @@ video {
   padding-top: 5rem;
 }
 
-.pl-5 {
-  padding-left: 1.25rem;
+.pt-36 {
+  padding-top: 9rem;
 }
 
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
-.pl-3 {
-  padding-left: 0.75rem;
+.pt-80 {
+  padding-top: 20rem;
 }
 
 .font-caveat {
@@ -981,6 +988,10 @@ video {
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .text-lg {
@@ -1047,8 +1058,36 @@ video {
   transition-duration: 150ms;
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-100 {
   transition-duration: 100ms;
+}
+
+.duration-75 {
+  transition-duration: 75ms;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @font-face {
@@ -1071,7 +1110,7 @@ video {
   src: url(./assets/fonts/Gagalin-Regular.woff) format('woff');
 }
 
-#nav.active{
+#nav.active {
   position: sticky;
   top: 0;
   transition: all .5s ease;
@@ -1092,6 +1131,65 @@ video {
   background-size: cover;
   -webkit-clip-path: url(#my-clip-path);
   clip-path: url(#my-clip-path);
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.fullscreen img {
+  max-height: 90vh;
+  max-width: 90vw;
+}
+
+.hover\:scale-50:hover {
+  --tw-scale-x: .5;
+  --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-\[105\]:hover {
+  --tw-scale-x: 105;
+  --tw-scale-y: 105;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-\[1\.04\]:hover {
+  --tw-scale-x: 1.04;
+  --tw-scale-y: 1.04;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-\[1\.02\]:hover {
+  --tw-scale-x: 1.02;
+  --tw-scale-y: 1.02;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:cursor-zoom-in:hover {
+  cursor: zoom-in;
 }
 
 .hover\:text-emerald-200:hover {
@@ -1141,6 +1239,10 @@ video {
     gap: 3rem;
   }
 
+  .max-2xl\:gap-20 {
+    gap: 5rem;
+  }
+
   .max-2xl\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1151,9 +1253,9 @@ video {
     padding-right: 1.5rem;
   }
 
-  .max-2xl\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
+  .max-2xl\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .max-2xl\:py-5 {
@@ -1161,13 +1263,28 @@ video {
     padding-bottom: 1.25rem;
   }
 
-  .max-2xl\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
   .max-2xl\:pb-1 {
     padding-bottom: 0.25rem;
+  }
+
+  .max-2xl\:pl-24 {
+    padding-left: 6rem;
+  }
+
+  .max-2xl\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .max-2xl\:pt-64 {
+    padding-top: 16rem;
+  }
+
+  .max-2xl\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .max-2xl\:pt-16 {
+    padding-top: 4rem;
   }
 
   .max-2xl\:text-2xl {
@@ -1272,6 +1389,3 @@ video {
     display: none;
   }
 }
-
-
-
