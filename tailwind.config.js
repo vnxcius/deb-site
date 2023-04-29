@@ -4,6 +4,9 @@ export const content = ["./dist/**/*.{html,js}"]
 export const theme = {
   
   extend: {
+    width: {
+      'section': '1650px',
+    },
     colors: {
       'primary': '#5B9981',
       'secondary': '#e6e6e6',
