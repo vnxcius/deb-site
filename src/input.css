@@ -41,6 +41,11 @@
   clip-path: url(#my-clip-path);
 }
 
+.clipped.ilu{
+  width: 250px;
+  height: 250px;
+}
+
 
 .fullscreen {
   position: fixed;
