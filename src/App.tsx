@@ -16,25 +16,22 @@ function App() {
         <div className="relative flex h-full flex-col justify-between md:px-14 lg:mx-auto lg:max-w-7xl">
           <header className="pt-5 pb-9">
             <nav className="mx-auto w-full max-w-3xl">
-              <ul className="font-bellota flex justify-between text-2xl">
-                <div className="flex gap-10">
-                  <li>
-                    <a href="#inicio">Início</a>
-                  </li>
-                  <li>
-                    <a href="#sobre">Sobre</a>
-                  </li>
-                </div>
-                <div className="flex gap-10">
-                  <li>
-                    <a href="#portfolio">Portfólio</a>
-                  </li>
-                  <li>
-                    <a href="#contato">Contato</a>
-                  </li>
-                </div>
+              <ul className="font-bellota flex items-end justify-evenly text-2xl">
+                <li>
+                  <a href="#inicio">Início</a>
+                </li>
+                <li>
+                  <a href="#sobre">Sobre</a>
+                </li>
+                <img src="/icon.png" alt="" className="w-14" />
+                <li>
+                  <a href="#um-pouco-de-tudo">Portfólio</a>
+                </li>
+                <li>
+                  <a href="#contato">Contato</a>
+                </li>
               </ul>
-              <hr className="mt-3" />
+              <hr className="mx-auto mt-3 max-w-[640px]" />
             </nav>
           </header>
           {/* ---------------------- Hero ---------------------- */}
@@ -109,7 +106,7 @@ function App() {
             alt="cat"
             width="80px"
             height="auto"
-            className="-mx-5 block"
+            className="-mx-5 block xl:w-28"
           />
         </div>
       </section>
@@ -120,7 +117,7 @@ function App() {
         className="from-wisteria to-jordy-blue bg-gradient-to-br"
       >
         <div className="bg-[linear-gradient(0deg,rgba(255,255,255,0.1)_2px,transparent_3px),linear-gradient(90deg,rgba(255,255,255,0.1)_3px,transparent_1px)] bg-[length:28px_28px] py-20">
-          <div className="mx-auto mb-10 flex max-w-4xl items-center gap-20">
+          <div className="mx-auto mb-10 flex max-w-5xl items-center gap-20 px-4">
             {/* ---------------------- Debora ---------------------- */}
             <div className="relative">
               <img
@@ -322,7 +319,7 @@ function App() {
       </section>
 
       {/* ---------------------- Um pouco de tudo ---------------------- */}
-      <section className="relative py-10 pb-26">
+      <section id="um-pouco-de-tudo" className="relative py-10 pb-26">
         <div className="pointer-events-none absolute inset-0 -z-10 bg-[url('/misc/butterfly_2.webp')] bg-auto bg-center bg-no-repeat md:bg-[length:200px_auto]" />
         <img
           src="/misc/star.webp"
@@ -341,40 +338,40 @@ function App() {
           <div className="flex-1 space-y-16">
             <a
               href="#artesanato"
-              className="font-futura from-wisteria to-jordy-blue block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
+              className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
             >
               Artesanato
             </a>
             <a
               href="#design-grafico"
-              className="font-futura from-wisteria to-jordy-blue block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
+              className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
             >
               Design Gráfico
             </a>
             <a
               href="#ilustracoes"
-              className="font-futura from-wisteria to-jordy-blue block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-xl"
+              className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-xl"
             >
               Ilustrações Digitais/Tradicionais
             </a>
           </div>
 
-          <div className="flex-1 place-items-end space-y-16">
+          <div className="flex-1 space-y-16">
             <a
               href="#pinturas"
-              className="font-futura from-wisteria to-jordy-blue block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
+              className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
             >
               Pinturas
             </a>
             <a
               href="#design-ux-ui"
-              className="font-futura from-wisteria to-jordy-blue block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
+              className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
             >
               Design UX/UI
             </a>
             <a
               href="#projetos"
-              className="font-futura from-wisteria to-jordy-blue block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
+              className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
             >
               Projetos
             </a>
@@ -387,54 +384,14 @@ function App() {
         id="artesanato"
         className="from-wisteria to-jordy-blue relative z-10 bg-gradient-to-br"
       >
-        <div className="relative overflow-x-hidden bg-[linear-gradient(0deg,rgba(255,255,255,0.1)_2px,transparent_3px),linear-gradient(90deg,rgba(255,255,255,0.1)_3px,transparent_1px)] bg-[length:28px_28px] py-20">
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute top-0 -left-20 rotate-180"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute top-0 left-44 rotate-180"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute top-0 right-48 rotate-180"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute top-0 -right-20 rotate-180"
-          />
+        <div className="relative overflow-x-hidden bg-[linear-gradient(0deg,rgba(255,255,255,0.1)_2px,transparent_3px),linear-gradient(90deg,rgba(255,255,255,0.1)_3px,transparent_1px)] bg-[length:28px_28px]">
+          <div className="h-44 bg-[url('/misc/cloud-top.svg')] bg-contain"></div>
 
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute bottom-0 -left-20"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute bottom-0 left-44"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute right-48 bottom-0"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute -right-20 bottom-0"
-          />
-
-          <h1 className="font-bellota mt-24 mb-10 text-center text-5xl text-white">
+          <h1 className="font-bellota mt-12 mb-10 text-center text-5xl text-white">
             Artesanato
           </h1>
 
-          <div className="mx-auto mb-36 flex w-full max-w-4xl items-center justify-between">
+          <div className="mx-auto mb-20 flex w-full max-w-4xl items-center justify-between">
             <div className="relative w-fit py-28">
               <img
                 src="/artesanato/artesanato_1.jpg"
@@ -480,6 +437,7 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="h-44 bg-[url('/misc/cloud-bottom.svg')] bg-contain"></div>
         </div>
       </section>
 
@@ -566,50 +524,10 @@ function App() {
         id="design-ux-ui"
         className="from-wisteria to-jordy-blue relative z-10 bg-gradient-to-br"
       >
-        <div className="relative overflow-x-hidden bg-[linear-gradient(0deg,rgba(255,255,255,0.1)_2px,transparent_3px),linear-gradient(90deg,rgba(255,255,255,0.1)_3px,transparent_1px)] bg-[length:28px_28px] py-44">
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute top-0 -left-20 rotate-180"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute top-0 left-44 rotate-180"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute top-0 right-48 rotate-180"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute top-0 -right-20 rotate-180"
-          />
+        <div className="relative overflow-x-hidden bg-[linear-gradient(0deg,rgba(255,255,255,0.1)_2px,transparent_3px),linear-gradient(90deg,rgba(255,255,255,0.1)_3px,transparent_1px)] bg-[length:28px_28px]">
+          <div className="h-44 bg-[url('/misc/cloud-top.svg')] bg-contain"></div>
 
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute bottom-0 -left-20"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute bottom-0 left-44"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute right-48 bottom-0"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute -right-20 bottom-0"
-          />
-
-          <div className="relative mx-auto mb-20 w-fit">
+          <div className="relative mx-auto mt-6 mb-20 w-fit">
             <h1 className="font-chakra-petch relative z-10 text-center text-4xl font-bold text-[#4931c2]">
               Design UX/UI
             </h1>
@@ -621,7 +539,7 @@ function App() {
             </h1>
           </div>
 
-          <div className="mx-auto flex max-w-5xl justify-between gap-10 px-10">
+          <div className="mx-auto mb-32 flex max-w-5xl justify-between gap-10 px-10">
             <div className="relative">
               <img
                 src="/misc/curved_arrow_2.webp"
@@ -688,11 +606,13 @@ function App() {
               </div>
             </div>
           </div>
+
+          <div className="h-44 bg-[url('/misc/cloud-bottom.svg')] bg-contain"></div>
         </div>
       </section>
 
       {/* ---------------------- Artes Digitais/Tradicionais ---------------------- */}
-      <section className="relative">
+      <section id="ilustracoes" className="relative">
         <div className="from-beige absolute top-0 z-20 h-96 w-full bg-gradient-to-t via-transparent to-transparent"></div>
         <div className="to-jordy-blue/80 via-jordy-blue absolute z-10 h-96 w-full bg-gradient-to-r from-[#91a4d8]"></div>
         <div className="pointer-events-none absolute inset-0 z-0 bg-[url('/misc/bubbles.webp')] bg-auto bg-bottom bg-no-repeat md:bg-[length:500px_auto]" />
@@ -777,50 +697,10 @@ function App() {
         id="pinturas"
         className="from-wisteria to-jordy-blue relative z-10 bg-gradient-to-br"
       >
-        <div className="relative overflow-x-hidden bg-[linear-gradient(0deg,rgba(255,255,255,0.1)_2px,transparent_3px),linear-gradient(90deg,rgba(255,255,255,0.1)_3px,transparent_1px)] bg-[length:28px_28px] py-44">
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute top-0 -left-20 rotate-180"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute top-0 left-44 rotate-180"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute top-0 right-48 rotate-180"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute top-0 -right-20 rotate-180"
-          />
+        <div className="relative overflow-x-hidden bg-[linear-gradient(0deg,rgba(255,255,255,0.1)_2px,transparent_3px),linear-gradient(90deg,rgba(255,255,255,0.1)_3px,transparent_1px)] bg-[length:28px_28px]">
+          <div className="h-44 bg-[url('/misc/cloud-top.svg')] bg-contain"></div>
 
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute bottom-0 -left-20"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute bottom-0 left-44"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute right-48 bottom-0"
-          />
-          <img
-            src="/misc/cloud.svg"
-            alt=""
-            className="absolute -right-20 bottom-0"
-          />
-
-          <div className="max-w- mx-auto flex flex-wrap items-center justify-center">
+          <div className="mx-auto mt-10 flex max-w-5xl flex-wrap items-center justify-center">
             <div className="relative bg-[url('/misc/cavalete.png')] bg-contain bg-center bg-no-repeat px-20 py-32">
               <p className="font-dreaming relative z-10 -translate-y-16 text-5xl">
                 Pinturas
@@ -831,7 +711,7 @@ function App() {
                 className="absolute top-10 left-16 w-40 object-contain"
               />
             </div>
-            <div className="flex flex-col flex-wrap items-center gap-4">
+            <div className="mb-16 flex flex-col flex-wrap items-center gap-4">
               <div className="flex items-center-safe gap-4">
                 <img
                   src="/pintura/pintura_1.jpg"
@@ -877,7 +757,10 @@ function App() {
       </section>
 
       {/* ---------------------- Projetos ---------------------- */}
-      <section className="relative bg-[url('/misc/art_bg.jpg')] bg-contain bg-center py-20">
+      <section
+        id="projetos"
+        className="relative bg-[url('/misc/art_bg.jpg')] bg-contain bg-center py-20"
+      >
         <div className="absolute top-0 z-0 h-full w-full bg-white/40"></div>
         <div className="font-luthier relative z-10 mx-auto w-fit space-y-2 text-[#484fa2]">
           <h1 className="rounded bg-white/30 px-3 text-8xl font-bold">
@@ -922,27 +805,11 @@ function App() {
       </section>
 
       {/* ---------------------- Contato ---------------------- */}
-      <section className="from-wisteria to-jordy-blue relative bg-gradient-to-tr py-44">
-        <img
-          src="/misc/cloud.svg"
-          alt=""
-          className="absolute top-0 -left-20 rotate-180"
-        />
-        <img
-          src="/misc/cloud.svg"
-          alt=""
-          className="absolute top-0 left-44 rotate-180"
-        />
-        <img
-          src="/misc/cloud.svg"
-          alt=""
-          className="absolute top-0 right-48 rotate-180"
-        />
-        <img
-          src="/misc/cloud.svg"
-          alt=""
-          className="absolute top-0 -right-20 rotate-180"
-        />
+      <section
+        id="contato"
+        className="from-wisteria to-jordy-blue relative bg-gradient-to-tr pb-44"
+      >
+        <div className="h-44 bg-[url('/misc/cloud-top.svg')] bg-contain"></div>
         <img
           src="/misc/bunny.png"
           alt=""
