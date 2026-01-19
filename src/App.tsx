@@ -10,6 +10,10 @@ import {
 } from "@phosphor-icons/react";
 
 function App() {
+  const date = new Date();
+  const currentYear = date.getFullYear();
+  const isDecember = date.getMonth() === 11;
+  const age = currentYear - (isDecember ? 2000 : 2001);
   return (
     <>
       <section id="inicio" className="h-svh">
@@ -35,7 +39,7 @@ function App() {
             </nav>
           </header>
           {/* ---------------------- Hero ---------------------- */}
-          <div className="from-wisteria to-jordy-blue relative flex w-full items-center justify-between rounded-4xl bg-linear-90 px-16 py-12 lg:py-20">
+          <div className="from-wisteria to-jordy-blue relative flex w-full items-center justify-between rounded-4xl bg-linear-90 px-16 py-12 xl:py-20">
             <div>
               <div className="pointer-events-none absolute inset-0 z-0 bg-[url('/misc/butterfly.svg')] bg-auto bg-center bg-no-repeat md:bg-[length:290px_auto]" />
               <div className="relative z-10 my-8 w-fit px-8">
@@ -91,7 +95,7 @@ function App() {
                     alt="Debora Santos"
                     width="347px"
                     height="347px"
-                    className="h-[347px] w-[347px] object-cover md:h-[270px] md:w-[270px]"
+                    className="h-[307px] w-[307px] object-cover xl:h-[400px] xl:w-[400px]"
                   />
 
                   <div className="bg-beige w-3.5 border-l border-[#1b1464]">
@@ -146,11 +150,11 @@ function App() {
                 <div className="px-16 py-10">
                   <p className="font-kitten mx-10 mb-3 text-4xl">Olá!</p>
                   <p className="font-comfortaa mb-6 text-justify text-xs font-semibold">
-                    Me chamo Debora e tenho 24 anos. Sou uma artista e designer
-                    que ama transformar ideias em realidade. Meu trabalho
-                    transita entre artesanato, ilustrações, design gráfico e
-                    UX/UI, sempre buscando transmitir emoções e contar histórias
-                    através da arte.
+                    Me chamo Debora e tenho {age} anos. Sou uma artista e
+                    designer que ama transformar ideias em realidade. Meu
+                    trabalho transita entre artesanato, ilustrações, design
+                    gráfico e UX/UI, sempre buscando transmitir emoções e contar
+                    histórias através da arte.
                   </p>
 
                   <p className="font-comfortaa text-justify text-xs font-semibold">
@@ -319,8 +323,8 @@ function App() {
       </section>
 
       {/* ---------------------- Um pouco de tudo ---------------------- */}
-      <section id="um-pouco-de-tudo" className="relative py-10 pb-26">
-        <div className="pointer-events-none absolute inset-0 -z-10 bg-[url('/misc/butterfly_2.webp')] bg-auto bg-center bg-no-repeat md:bg-[length:200px_auto]" />
+      <section id="um-pouco-de-tudo" className="relative py-10 pb-16">
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-[url('/misc/butterfly_2.webp')] bg-auto bg-bottom bg-no-repeat md:bg-[length:200px_auto]" />
         <img
           src="/misc/star.webp"
           alt=""
@@ -334,41 +338,37 @@ function App() {
         <h1 className="font-bellota mb-10 block text-center text-3xl font-semibold">
           Um pouco de tudo
         </h1>
-        <div className="mx-auto flex w-full max-w-4xl items-center justify-between">
-          <div className="flex-1 space-y-16">
-            <a
-              href="#artesanato"
-              className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
-            >
-              Artesanato
-            </a>
+        <div className="mx-auto grid w-full max-w-4xl grid-cols-3 items-center justify-between gap-5">
+          <div className="space-y-16">
             <a
               href="#design-grafico"
               className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
             >
               Design Gráfico
             </a>
-            <a
-              href="#ilustracoes"
-              className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-xl"
-            >
-              Ilustrações Digitais/Tradicionais
-            </a>
-          </div>
-
-          <div className="flex-1 space-y-16">
+            <div className="pb-20"></div>
             <a
               href="#pinturas"
               className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
             >
               Pinturas
             </a>
+          </div>
+          <a
+            href="#design-ux-ui"
+            className="font-futura from-wisteria to-jordy-blue mx-auto mb-14 block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
+          >
+            Design UX/UI
+          </a>
+
+          <div className="space-y-16">
             <a
-              href="#design-ux-ui"
-              className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
+              href="#ilustracoes"
+              className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-xl"
             >
-              Design UX/UI
+              Ilustrações Digitais/Tradicionais
             </a>
+            <div className="pb-20"></div>
             <a
               href="#projetos"
               className="font-futura from-wisteria to-jordy-blue mx-auto block w-full max-w-xs rounded-2xl bg-gradient-to-r py-4 text-center text-2xl"
@@ -376,68 +376,6 @@ function App() {
               Projetos
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* ---------------------- Artesanato ---------------------- */}
-      <section
-        id="artesanato"
-        className="from-wisteria to-jordy-blue relative z-10 bg-gradient-to-br"
-      >
-        <div className="relative overflow-x-hidden bg-[linear-gradient(0deg,rgba(255,255,255,0.1)_2px,transparent_3px),linear-gradient(90deg,rgba(255,255,255,0.1)_3px,transparent_1px)] bg-[length:28px_28px]">
-          <div className="h-44 bg-[url('/misc/cloud-top.svg')] bg-contain"></div>
-
-          <h1 className="font-bellota mt-12 mb-10 text-center text-5xl text-white">
-            Artesanato
-          </h1>
-
-          <div className="mx-auto mb-20 flex w-full max-w-4xl items-center justify-between">
-            <div className="relative w-fit py-28">
-              <img
-                src="/artesanato/artesanato_1.jpg"
-                alt=""
-                className="absolute top-0 size-36 rounded-2xl object-cover"
-              />
-              <img
-                src="/artesanato/artesanato_2.webp"
-                alt=""
-                className="relative z-10 ml-20 size-36 rounded-2xl object-cover"
-              />
-              <img
-                src="/artesanato/artesanato_3.webp"
-                alt=""
-                className="absolute -right-1/2 bottom-0 size-36 rounded-2xl object-cover"
-              />
-            </div>
-
-            <div className="flex items-center gap-2">
-              <div className="flex flex-col gap-2">
-                <img
-                  src="/artesanato/artesanato_4.webp"
-                  alt=""
-                  className="h-36 w-64 rounded-3xl object-cover"
-                />
-                <img
-                  src="/artesanato/artesanato_5.jpg"
-                  alt=""
-                  className="h-68 w-64 rounded-3xl object-cover"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <img
-                  src="/artesanato/artesanato_6.jpg"
-                  alt=""
-                  className="h-54 w-32 rounded-3xl object-cover"
-                />
-                <img
-                  src="/artesanato/artesanato_7.webp"
-                  alt=""
-                  className="h-50 w-32 rounded-3xl object-cover"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="h-44 bg-[url('/misc/cloud-bottom.svg')] bg-contain"></div>
         </div>
       </section>
 
@@ -449,12 +387,12 @@ function App() {
         <img
           src="/misc/grid_ripped.png"
           alt=""
-          className="absolute top-0 left-12 z-10 w-64 scale-150 rotate-[270deg]"
+          className="absolute top-0 left-12 z-10 w-64 scale-150 rotate-[270deg] xl:top-20 xl:scale-[200%]"
         />
         <img
           src="/misc/insects_ripped.png"
           alt=""
-          className="absolute top-0 left-0 z-20 w-44"
+          className="absolute top-0 left-0 z-20 w-44 xl:w-52"
         />
         <img
           src="/misc/paper_ripped.webp"
@@ -471,7 +409,7 @@ function App() {
           <img
             src="/misc/tape_2.webp"
             alt=""
-            className="w-full object-contain"
+            className="w-full object-contain xl:scale-125"
           />
           <img
             src="/misc/design_grafico.png"
@@ -480,12 +418,12 @@ function App() {
           />
         </div>
 
-        <div className="mx-auto flex max-w-3xl items-center justify-between">
+        <div className="mx-auto flex max-w-3xl items-center justify-between xl:max-w-4xl">
           <div>
             <img
               src="/design_grafico/my_universe.webp"
               alt=""
-              className="w-66"
+              className="w-66 xl:w-80"
             />
             <a
               href="https://instagram.com/oliee.art"
@@ -502,19 +440,23 @@ function App() {
             <img
               src="/design_grafico/dia_das_maes.webp"
               alt=""
-              className="w-44"
+              className="w-44 xl:w-56"
             />
             <img
               src="/design_grafico/dia_mulher.webp"
               alt=""
-              className="w-44"
+              className="w-44 xl:w-56"
             />
             <img
               src="/design_grafico/dia_mulher_2.webp"
               alt=""
-              className="w-44"
+              className="w-44 xl:w-56"
             />
-            <img src="/design_grafico/pascoa.webp" alt="" className="w-44" />
+            <img
+              src="/design_grafico/pascoa.webp"
+              alt=""
+              className="w-44 xl:w-56"
+            />
           </div>
         </div>
       </section>
@@ -816,9 +758,9 @@ function App() {
           className="absolute bottom-0 left-0 w-32"
         />
 
-        <div className="font-bellota mx-auto w-fit bg-[url('/misc/taped_bg.svg')] bg-contain bg-center bg-no-repeat">
-          <div className="font-bellota px-24 py-32 text-2xl">
-            <p className="font-futura mb-5 text-3xl">
+        <div className="font-bellota mx-auto w-fit bg-[url('/misc/taped_bg.svg')] bg-contain bg-center bg-no-repeat xl:w-full xl:max-w-3xl">
+          <div className="font-bellota px-24 py-32 text-2xl xl:px-44">
+            <p className="font-futura mb-5 text-center text-3xl">
               Entre em contato comigo!
             </p>
             <p>deboraolis09@gmail.com</p>
